@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,6 +71,10 @@
     <ProjectReference Include="..\Project.Domain\Project.Domain.csproj">
       <Project>{5463E904-EBD7-4B71-A8FB-336C7E374F29}</Project>
       <Name>Project.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.Persistence\Project.Persistence.csproj">
+      <Project>{9D342FAB-7FA3-4C96-B8B2-51A6F55C982C}</Project>
+      <Name>Project.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
