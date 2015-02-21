@@ -14,7 +14,7 @@ namespace Project.Persistence.Ef
         {
             
         }
-        public new DbSet<TEntity> Set<TEntity>() where TEntity : Info
+        public new DbSet<TEntity> Set<TEntity>() where TEntity : Info 
         {
             return base.Set<TEntity>();
         }
