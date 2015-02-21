@@ -14,6 +14,7 @@ namespace Project.Persistence.Ef.Mapping
             Property(t => t.Role).IsRequired();
 
             ToTable("Users");
+            
         }
     }
 }
