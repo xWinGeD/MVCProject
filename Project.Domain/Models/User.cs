@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
+using Microsoft.AspNet.Identity;
 using Project.Domain.Abstract;
 using Project.Domain.Enum;
 
 namespace Project.Domain.Models
 {
-    public class User : Info
+    public class User : Info,IUser<int>
     {
-        public string Login { get; set; }
+        public string UserName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
         public string FirstName { get; set; }
