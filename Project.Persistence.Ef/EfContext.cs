@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Project.Domain.Abstract;
+using Project.Domain.Models;
+using Project.Persistence.Ef.Mapping;
 
 namespace Project.Persistence.Ef
 {
@@ -22,7 +24,9 @@ namespace Project.Persistence.Ef
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            modelBuilder.Configurations.Add(new UserMap<User>());
+            modelBuilder.Configurations.Add(new OrderMap<Order>());
+            modelBuilder.Configurations.Add(new ProductMap<Product>());
             base.OnModelCreating(modelBuilder);
         }
     }
