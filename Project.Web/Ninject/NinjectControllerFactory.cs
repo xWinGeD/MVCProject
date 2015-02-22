@@ -27,6 +27,7 @@ namespace Project.Web.Ninject
         public void AddBindings()
         {
             ninjectKernel.Bind(typeof (IRepository<>)).To(typeof (Repository<>));
+            ninjectKernel.Bind(typeof (IUnitOfWork)).To(typeof (UnitOfWork));
         }
     }
 }
